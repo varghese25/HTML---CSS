@@ -8,16 +8,107 @@
 </head>
 
 <body>
-    <form action="signupresult.html" method="get"> <!--Form is page to input details. action is used display when signUp button clicked it display signupresult.html page. method post means insert user infoormation data-->
-        <div> <!-- division tag which divides the userName and Password Group elements and give ID for each. div which means next line it starts-->
-            <label>User Name</label><!--label-->
-            <input name="User Name"><!-- tex box purpose-->
-        </div>
+<!--Form is page to input details. action is used display when signUp button clicked it display signupresult.html page. method post means insert user infoormation data-->
+    <form action="signupresult.html" method="GET" enctype="multipart/form-data"> <!-- enctype="multipart/form-data: single short we cant sent data we use this(nctype="multipart/form-data) send data in mutlipe part if file is huge data going to upload in database we use. Ex video/audo/excel">
+        <!--Form is page to input details. action is used display when signUp button clicked it display signupresult.html page. method post means insert user infoormation data-->
+       
+       <!-- User Name & Validation attributs-->
         <div>
-            <label> Password</label>
-            <input name="Password">
+            <!-- division tag which divides the userName and Password Group elements and give ID for each. div which means next line it starts-->
+            <label for="username"> UserName</label>
+            <!--label, for used to connect the label and input when click username textbox highlights -->
+            <input type="text" name="username" id="username" placeholder="UserName" value="varghese" size="10" maxlength="10" required>
+            <!-- tex box purpose, id used for reference-->
         </div>
-          <button>Sign Up</button><!--button-->
+
+
+         <!-- Email & Validation attributs-->
+
+         <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" size="10" required>
+        </div>
+
+
+        <!--Hidden -->
+        <div>
+            <input type="hidden" name="hidden" id="hidden" value="12345"> <!--hidden: means it will not
+            display in the form but it will be in the form to some user details to front end to backend we use this concepts it
+            will effective in JavaScript-->
+
+
+        <!-- Password & Validation attributs-->
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" size="10" minlength="8" required>
+            <!--for and id purpose mentioned. type means wheather text or password it will be hide eye will password-->
+        </div>
+
+        <!-- Year Of Brith & Validation attributs-->
+        <div>
+            <label for="dateofbirth">Date of Birth</label>
+            <input type="date" name="yearofbirth" id="yearofbirth" min="01/01/1900" step="10" size="10" required>
+        </div>
+        
+        <!--about textarear box-->
+        <div>
+            <label for="about">About</label>
+            <textarea name="about" id="about" cols="25" rows="10"></textarea> <!--cols means column, rows means row are optional we controll via css-->
+        </div>
+
+        <!--SMS alert checkbox-->
+        <div>
+            
+        <input type="checkbox" name="smsalert" id="smsalert" >
+        <label for="smsalert">SMS Alert</label>
+
+        </div>
+           <!--Email alert checkbox-->
+        <div>  
+        <input type="checkbox" name="emailalert" id="emailalert" >
+        <label for="emailalert">Email Alert</label>
+        </div>
+
+        <!--terms and condition checkbox-->
+        <div>
+        <input type="checkbox" name="terms" id="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+        </div>
+
+        <!-- radio button gender male-->
+        <div>
+            <input type="radio" name="gender" id="male" value="male"> <!--name="-gender-" means group the radio button. then it will check and uncheck.If we give name="male or female it will be check both-->
+            <label for="male">Male</label>
+            </div>
+
+             <!-- radio button gender female-->
+              <div>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+              </div>
+
+              <!--drop down-->
+              <div>
+                <label for="State"> State</label>
+                <select name="state" id="state" multiple> <!--multiple means we can select multiple state-->
+                    <option value="" label=""></option>
+                    <option value="tamilnadu">Tamil Nadu</option>
+                    <option value="kerala">Kerala</option>
+                    <option value="Karnataka">Karnataka</option>
+                </select>
+              </div>
+
+              <!-- File Upload-->
+              <div>
+                    <label for="resume">Resume</label>
+                    <input type="file" name="file" id="file"> <!--means it will accept only image file-->
+              </div>
+        <!-- submit norml & image submit button & Reset-->
+
+        <input type="image" src="images/submit.jpg" alt="Submit" width="90" height="90"> <!--image submit button-->
+        <!-- <button type="submit">Sign Up</button> Normal Submit button -->
+        <button type="reset">Reset</button> <!--button type reset means when click it will reset the form-->
+
 
     </form>
 </body>
@@ -25,8 +116,33 @@
 </html>
 
 <!-- GET used get the signupresult.html" details-->
- <!-- POST sending signupresult.html details database-->
+<!-- POST sending signupresult.html details database-->
+<!--placeholder inside input text box User Name will be visible-->
+<!--value="varghese" means default value will be varghese-->
+<!--label for="username" means when click on username text box it will highlight-->
+<!--id="username" means reference to the username-->
+<!--type="password" means password will be hide-->
+<!--id="password" means reference to the password-->
+<!--button type="submit" means when click it will submit the form-->
+<!--size: control size of the textbox length-->
+<!--maxlength: control the maximum length of the character typed in userName text box-->
+<!--minlength: control the minimum length of the character must typed in Password text box 8 minlength must type 8 char -->
+<!--required:  means it is a validation, mandatory to fill the UserName & password.-->
+<!--min & max: control the minimum (Year 1900 not below)& maximum(Yeae 3000) value of the yearofbirth-->
+<!--step: control the increment of the yearofbirth by 10 wich will increase Year 1900 to 1910 spin arrow-->
+<!--cols: control the column size of the about text area box-->
+<!--rows: control the row size of the about text area box-->
+<!--Group the name in radio button give the comman name Example: name="gender" for male and female then radio button will untick and select male or female gender-->
+<!-- gender=on means we have to give value='Female' or Value='Male' so that information will post correctly in DB. if dont give value it will genderon :http://127.0.0.1:5500/signupresult.html?username=varghese&email=varghesetiju%40outlook.com&password=varghese&yearofbirth=2024-10-14&about=&smsalert=on&terms=on&gender=on-->
 
- <!-- watch from 14:49-->
- <!--https://www.youtube.com/watch?v=tDLLIq95VZU&list=PLYM2_EX_xVvXZ2A08faQ_7Iz4unlGs176&index=8-->
- <!--http://127.0.0.1:5500/signupresult.html?User+Name=gggg&Password=ggg // Query String
+<!-- check box & radio button:input type="radio" name="gender" id="female" value="female" name is group the radio button with same name:gender for both male & female for that we have to give value in radio button. if we dont give value it will
+ check box has differ name for each check box.--> 
+<!--input type='tel' telephone-->
+<!--input type='color' color picker display-->
+
+
+
+<!-- Group ing & Meta Tags https://www.youtube.com/watch?v=w-I83PKOGrU&list=PLYM2_EX_xVvXZ2A08faQ_7Iz4unlGs176&index=9-->
+
+<!--https://www.youtube.com/watch?v=tDLLIq95VZU&list=PLYM2_EX_xVvXZ2A08faQ_7Iz4unlGs176&index=8-->
+<!--http://127.0.0.1:5500/signupresult.html?User+Name=gggg&Password=ggg // Query String
