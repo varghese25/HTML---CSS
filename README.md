@@ -1,3 +1,20 @@
+
+
+
+
+## 03-01-2024
+ <!-- Class, div, span tags, block vs inline elements, various meta tags and their usages-->
+<!--Block Elements: Pargraph,Heading,list,div,ul which automatically goes to next line-->
+<!-- Inline Elements: achor tag, image, span which does not goes to next line -->
+<!--class: where we can group div and give CSS ex h3 heading can kept unique similary. We can style-->
+
+  <!--A <span> element which is used to color a part of a text:-->
+<!--Escape Sequences copyrigh, dollar manyMore-->
+<!--iFrame: Emmbed a page with this page we can use this iframe-->
+<!--iframe : My Canadian Home address used in this page -->
+
+<------------------------------------------------------------------------------------------------>
+## 02-01-2024
 <!-- GET used get the signupresult.html" details-->
 <!-- POST sending signupresult.html details database-->
 <!--placeholder inside input text box User Name will be visible-->
@@ -24,3 +41,5 @@
 <!--input type='color' color picker display-->
 <!--https://www.youtube.com/watch?v=tDLLIq95VZU&list=PLYM2_EX_xVvXZ2A08faQ_7Iz4unlGs176&index=8-->
 <!--http://127.0.0.1:5500/signupresult.html?User+Name=gggg&Password=ggg // Query String
+
+------------------------------------------------------------------------------------------------
