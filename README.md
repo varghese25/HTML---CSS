@@ -1,8 +1,23 @@
 
+<------------------------------------------------------------------------------------------------>
 
+## 04-01-2025
 
+Word Wrap - Alt+Z
+ <!--audio tag : controls: autoplay: play the song. loop:Repeats the song. 
+    preload"auto"" when page loads play audio. -->
+<!--preload"none" when user click the playbutton play song "here play duration wont be shown"-->
+ <!-- <audio controls preload="auto"-->
+<!-- <audio controls preload="metadata": Here user can see the duration and First Frame information collect when user click the play button load and play song-->
 
-## 03-01-2024
+<!-- Video use same control which are used for Audio-->
+<!--poster: where we can use shannon image as poster. All control which are used in audio will applicable in the audio-->
+ <!-- muted when page load Applicabel for video & Audio->
+
+ <!--mutiple browser we can add source in Audio and video any format can support in browser Accoding-->
+<------------------------------------------------------------------------------------------------>
+
+## 03-01-2025
  <!-- Class, div, span tags, block vs inline elements, various meta tags and their usages-->
 <!--Block Elements: Pargraph,Heading,list,div,ul which automatically goes to next line-->
 <!-- Inline Elements: achor tag, image, span which does not goes to next line -->
@@ -14,7 +29,7 @@
 <!--iframe : My Canadian Home address used in this page -->
 
 <------------------------------------------------------------------------------------------------>
-## 02-01-2024
+## 02-01-2025
 <!-- GET used get the signupresult.html" details-->
 <!-- POST sending signupresult.html details database-->
 <!--placeholder inside input text box User Name will be visible-->

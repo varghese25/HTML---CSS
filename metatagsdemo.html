@@ -55,6 +55,35 @@
  
 </div>
 
-    
+<!--Audio song tag -->
+
+<div>
+    <h5> MP3 Song</h5>
+    <!--audio tag : controls: autoplay: play the song. loop:Repeats the song. 
+    preload"auto"" when page loads play audio.  -->
+    <audio controls muted preload="none"> <!--preload"none" when user click the playbutton play song "here play duration wont be shown"-->
+ <!-- <audio controls preload="auto"-->
+<!-- <audio controls preload="metadata": Here user can see the duration and First Frame information collect when user click the play button load and play song-->
+ <!-- muted when page load-->
+ 
+        <source src="media/Hey Minnale.mpeg" type="audio/mp3">
+        Your browser does not support the audio element.
+</div>
+<!--mutiple browser we can add source in Audio and video -->
+<div>
+    <!--Video tag: controls: play the video. poster: first frame of the video. -->
+    <h5> MP4 Video </h5>
+    <video controls muted width="600" height="400" poster="media/Shannon.mp4"> <!--poster: where we can use shannon image as poster. All control which are used in audio will applicable in the audio-->
+        <source src="media/Shannon.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+         <!-- muted when page load-->
+    </video>
+
+    <div>
+        <h5> Embed YouTue Videp</h5>
+        <!--Embed Youtube video: Click Share copy paste the code here-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bJACT3wgGJY?si=orus03XiSCwJM9Yj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+</div>
 </body>
 </html>
