@@ -3,6 +3,29 @@
 
 ## 04-01-2025
 
+CSS -> Inline syle is given it will give priorty for inline rather it wont consider the style.css
+index.html page if i give internal<h2> color is red and in style.css(external) <h2> blue it will give give priority to inline <h2> color red in the index.html it wont consider the style.css tage
+
+
+*{ // * universal selector which will change font type of all. in case for if specified i wont change h2 
+  font-family: Arial, sans-serif;
+  color: red
+}
+
+in case for if specified i wont change h2  it cant change color this type selector
+h2{
+  color: blue;
+} 
+
+h1,h2,h3 {
+  color: red // we can also give like this
+}
+
+from html page if we want select if in css use # Anothe way use class 
+#experience{
+  color: green;  
+}
+
 Word Wrap - Alt+Z
  <!--audio tag : controls: autoplay: play the song. loop:Repeats the song. 
     preload"auto"" when page loads play audio. -->
