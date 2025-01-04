@@ -1,7 +1,13 @@
 
+
+
+https://www.youtube.com/watch?v=w46i7nY9Zt4&list=PLYM2_EX_xVvXZ2A08faQ_7Iz4unlGs176&index=11
+watch from 12:11
+
 <------------------------------------------------------------------------------------------------>
 
 ## 04-01-2025
+
 
 CSS -> Inline syle is given it will give priorty for inline rather it wont consider the style.css
 index.html page if i give internal<h2> color is red and in style.css(external) <h2> blue it will give give priority to inline <h2> color red in the index.html it wont consider the style.css tage
