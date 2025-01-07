@@ -1,10 +1,33 @@
 
 
 
-https://www.youtube.com/watch?v=w46i7nY9Zt4&list=PLYM2_EX_xVvXZ2A08faQ_7Iz4unlGs176&index=11
-watch from 12:11
 
-<------------------------------------------------------------------------------------------------>
+
+
+p[class^="m"]{
+color: yellow;
+} TO LEARN MORE CLASS FILTERING
+
+## 06-01-2025
+
+SIXTEEN PIXEL SCALE
+
+h1	32px  = h1	200% = h1	2em 
+h2  24px  = h2	150% = h2	1.5em 
+h3	18px  = h3	133% = h3 1.125em
+
+body 18px = body 100% = p 	1em
+
+https://www.fontsquirrel.com/
+
+https://loremipsum.io/generator // 
+
+
+
+
+https://www.youtube.com/watch?v=oWerFE7tp-s&list=PLYM2_EX_xVvXZ2A08faQ_7Iz4unlGs176&index=13
+
+------------------------------------------------------------------------>
 
 ## 04-01-2025
 

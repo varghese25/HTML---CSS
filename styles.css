@@ -1,23 +1,57 @@
-body {
+ body {
   background-color: whitesmoke;
 }
-h1{
+/* Type Selector */
+h1{ /*specfic rule*/
   color: red;
 }
-h2{
-  color: blue;
-}
 
-h3{
-  color: blueviolet;
-}
 p {
   color: black;
 }
+/* Universal Selector */
 *{ /* universal selector which will change font type of all. in case for if specified i wont change h2*/ 
   font-family: Arial, sans-serif;
 }
+
+
+
+/*id & class difference class: doesnt need unquie name. for id: need unquie name id: #experience class: . */
 /*  <p id="experience"> used id "experience" to bring this para in green css used # as id so in page experince alone displayed in greencolor check css*/
-#experience{
+#experience{ /* Id Selector # importat to call id from index*/
   color: green;  
+} 
+
+/* <p class="greentext" class: can be used so that text appear in green color.> */
+.greentext{ /* Class Selector dot important to call from idex*/
+  color: green;
 }
+
+/* child selector */
+div>p{ /* div without > we can use div p meaning it will change the paragrp not div*/
+  color: red; /* div  is parent dirct child <p> tag in this Any Question..? changed to red*/
+}
+/* descendant selector */
+p>a{ /* One way to write another way below*/
+  color: yellowgreen; /* <p> is parent <a> child is descentant for div tag. in this <a href="Contact"> Contact</a>changed to yellogreen*/
+}
+/* descendant selector */
+div a{ /* Another way to write above code. div(descendant) <a> <a href="Contact"> Contact</a>changed to yellogreen*/
+  color: yellowgreen; /* Another way to write above code. <a href="Contact"> Contact</a>changed to yellogreen*/
+}
+
+/* sibling selector */
+h1~h5{ /* h1 is sibling of h5. h1~h5 will change h5 color to darkgreen. it will change h5 not h1*/
+  color: darkgreen; /* h5 color changed to darkgreen*/
+}
+/* Adjucent sibiling */
+h1+h2{ /* h1 is adjucent sibling of h2 near to h1 is h2. h1+h2 will change h2 color to blue.it will change h2 not h1*/
+  color: blue; /* h2 color changed to blue*/
+ }
+  /*h2 her h2 follow spific rule */
+
+
+/*  */
+h1,h2{
+  color: violet !important;
+}  /*here h2 is not spicific so the rule not applicable above mentioned. ! important mentioned what ever spicific rule it will be override changes to violet */

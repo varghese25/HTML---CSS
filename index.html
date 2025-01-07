@@ -2,15 +2,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" type="text/css">
   <title>My Resume</title>
 </head>
 <body>
   <h1>
     <center>RESUME</center>
+    <h2>Varghese Baby</h2> <!--Sibiling Selector pink the h5 heading tag using style css-->
+    <h3>Varghese Baby</h3>
+    <h4>Varghese Baby</h4>
+    <h5>Varghese Baby</h5>
+    <h6>Varghese Baby</h6>
   </h1>
   <img src="images/31009-17.jpg" alt="Varghese Baby" width="150" height="150">
-  <p id="experience"> <!--used id "experience" to bring this para in green css used # as id so in page experince alone displayed in greencolor check css -->
+  <p class="greentext"> <!--used id="experience" to bring this para in green css used # as id so in page experince alone displayed in greencolor check css 
+    class: can be used so that text appear in green color. id & class difference class: doesnt need unquie name. for id: need unquie name
+    HTML <p id="experience", <p class="greentext>"
+      css #experience{
+  color: green; 
+   .greentext{
+  color: green;-->
     Hello<br>
     Experienced Software Implemenation Engineer over 13 years of experience and tech enthusiast.</p> <br>
     <hr>
@@ -37,6 +48,13 @@
 
     <li>Implementation Engineer, May 2021 - Dec 2021</li>
     <hr>
+
+    <div>
+      <p> Any Question..? <a href="Contact"> Contact</a></p> <!--div is parent child <p>. similary <P> is parent <a> is child i want this line alone ( <p> Any Question..?)red check style.css div>p{
+        color: red; -->
+    </div>
+    <hr>
+
     <h2>
       <address>Contact Details</address>
     </h2>

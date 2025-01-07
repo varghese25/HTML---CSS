@@ -1,0 +1,84 @@
+body{
+    font-family: 'Courier New', Courier, monospace; /*font family*/
+    background-color: white;
+    font-size: 1em;
+}
+
+
+h1,h2{
+
+    font-family: Georgia, 'Times New Roman', Times, serif; /*font family*/
+    font-weight: normal;    
+    font-style: italic; /*italic, oblique*/
+    font-stretch: extra-condensed;  /*condensed, normal, expanded, extra-expanded, ultra-expanded*/
+    text-transform: uppercase; /*uppercase*/
+    text-transform: lowercase; /*lowercase*/
+    text-transform: capitalize; /*capitalize*/
+    text-decoration: underline; /*underline, overline, line-through, none*/
+    text-decoration: dotted underline; /*dotted, dashed, solid, double, wavy*/
+    text-decoration: line-through; /*underline, overline, line-through, none*/
+    text-decoration: underline; /*underline, overline, line-through, none*/
+    text-decoration: none; /*underline, overline, line-through, none*/
+    letter-spacing: .5em; /*letter spacing*/
+    word-spacing: .2em; /*word spacing*/
+    text-align: center; /*left, right, center, justify*/
+
+    /* font-size: 12px; font size, default size is 16px. Modern computer define pixel as 1/125th of an inch*/
+    /* font-size: 75%;  can give in 75 percentage 12px.  100 % is default 16 pixel*/
+    font-size: 1em; /*em  (means with of m) is relative to the font-size of the element itself. 1em (default 16px)is equal to the current font-size of the element. 2em means 2 times the size of the current font. Ems are scalable in nature, so 2em would equal 24px (assuming the default size is 12px).*/
+/* em size can manipulate from relavtive meaning from h1,h2 i can able to control body font-size1 em is taken and which add to relative em which can increase and decrease  from here px also do some thing*/
+    color: rgb(100, 150, 75); /*rgb color code*/
+    color: #64964B; /*hex color code*/
+    /*h3  green both same in RGB & HEX calcuation 16/100=64 16/150=96 16/75=4b in hex 11 is b*/
+    color : hsl(100, 33.3%, 44.1%); /*hsl color code  introduced in css3*/
+    color: black;  /*text color should be high contrast so that it will be easy to read*/
+    background-color: rgb(255, 0,0,); /*red color*/ 
+    background-color: rgba(255, 0,0, 0.1); /*0.1 opacity  introduced in css3 so some time this might not work old b
+    browser safer side rgb. Now it will what ever last background color it will apply according rule in case older browser it will take above bckgroud color*/  
+}
+
+p{
+    line-height: 1.5em; /*line height*/
+    text-align: left; /*left, right, center, justify*/
+    text-indent: 50px; /*text indent*/
+    /* /text-indent: -9999px; /*it will text to next page. which useful during log/ */
+    /* text-shadow: 2px 2px 2px #000000; first px shade towards right, second shadow towards down, third px blur, finally color */
+}
+/*Pseudo-elements*/
+p:first-letter{
+    font-size: 2em; /*first letter size*/
+}
+    /* /* p:first-line{
+        font-size: 2em; first letter size
+    } */
+
+
+    /* Pseudo-classes for  <a href=""> link  follow same Order*/
+a:visited{
+    color: brown; /*visited link color   <a href="">View Courses</a>*/
+}
+a:link{
+    color: blue; /*link color not vistied . Now i dint click it will blue color 
+    if i click change to visited brown color <a href="https://www.fontsquirrel.com/">References</a>*/
+}
+a:hover{
+    color: yellow; /*mouse over link color <a href="https://www.fontsquirrel.com/">References</a>*/
+}
+a:focus{
+    color: darkgreen; /*when user click link it will focus on link*/        
+}
+a:active{
+    color: deeppink; /* user click link it active for few second wheather user clicked or not */        
+}
+
+/* p[class]{ /* p means paragragh[class] parathesise inside class means any class.Even any attribute it can [id]. 
+    if you remove class name myclass <p id="para1" class="myclass"> it wont change color.   change to below mentioned */
+    /* color: orangered; 
+} Another Example below */ */
+/* p[id =para1]{ /* p means paragragh[id =para1] parathesise inside id means any id.
+    color: orangered; /*id selector
+    }*/
+ 
+p[class^="m"]{
+color: yellow;
+}
