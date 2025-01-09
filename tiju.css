@@ -78,7 +78,7 @@ p{
     -moz-box-shadow: 10px 10px 10px gray;
     -webkit-box-shadow: inset 10px 10px 10px 5px gray;  /*inset means shadow inside the box*/
     border: 50px black;
-    border-image: url(/images/border_image.png) 30 repeat; /*border image stretch the image, round the image,repeat */
+    border-image: url(/images/border.png) 30 repeat; /*border image stretch the image, round the image,repeat */
   
 }
 

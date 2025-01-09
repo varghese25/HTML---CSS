@@ -1,0 +1,28 @@
+
+/*Default static position is parent <body> is root if it find any non static parent it will offset*/
+.bluebox{
+    background-color: steelblue;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    position: relative;
+}
+.yellowbox{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    /*position: relative; /* relative postion adjust the static postion of this box this called offset left and top how long to adjust */
+   /* left: 20px; /* From Static postistion it has moved box 20px to right. This called called as offset meaning how long to adjust*/
+    /* top: 30px; /* From Static postistion it has moved move box 30px to bottom.This called called as offset how long to adjust*/
+    /* bottom: 200px;
+    left: 100px;   this will positon in center*/
+    position: absolute; /* TTM heading and paragrah element will merge inside yellow box*/
+    top: 10px; /* from document 10px it adjucted  */
+}
+
+/* relattive moves the postion of h2 to left 100px is offset. from the default position
+h2{
+    position: relative;
+    left: 100px;
+
+} */

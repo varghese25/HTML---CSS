@@ -1,0 +1,73 @@
+body{
+    background: url('/images/bg5.jpg');
+ font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+/*Entire Form inside .regform*/
+.regform{
+    width: 500px;
+    margin: 250px auto;
+    padding: 10px 20px 30px;
+    background-color: rgba(0, 0, 0, 0.5); /*0.5 gives Transprancey*/
+    color: white;   /*Text color*/
+    font-size: 30px;
+    border-radius: 10px; /*Round the corners of the form*/
+}
+.regform h3{
+    text-align: center;
+    color: #E29578;
+
+}
+/*label username,email, password gave class called .textlabel while give display block username,email,password in block. .textlabel is child class .reform is a parent class*/
+.regform .textlabel{
+    display: block;
+}
+
+/*.input <div class="input"> input<input type="text" id="name" name="Name">
+.input<div class="input"> input<input type="text" id="email" name="Email">
+.input<div class="input"> input<input type="text" id="password" name="Password">
+ type,targeting the textbox of userName,Email,Password resize the text box*/
+.input input{
+    width: 100%;
+    font-size: 1.2em;
+    border: 1px solid #006d77;
+    box-shadow: 2px;    /*Give shadow to the text box*/
+    border-radius: 8px; /*Round the corners of the text box*/
+    padding: 10px 10px;  /*Padding inside the text box*/
+    box-sizing: border-box; /*Border inside the text box*/
+    margin: 5px 0 10px 0; /*Margin outside the text box*/
+    
+}
+
+input:focus{
+    background-color: #E29578;  /*Remove the outline of the text box*/
+}
+
+/*Button*/
+.btn{
+    text-align: center;
+    
+}
+button{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    background-color: #E29578;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0;
+    box-shadow: 2px;
+}
+
+
+/* class .radio<div class="radio"> input type is radio <input type="radio" name="gender" id="male" value="male"> */
+
+.radio input{
+    accent-color: grey;
+    transform:scale(1.5); /*Increase the size of the radio button*/
+    -ms-transform: scale(1.5);  /*IE 9 radio button should work in this browser*/
+    -webkit-transform: scale(1.5);/*Chrome, Safari, Opera radio button should work in this browser*/
+
+}

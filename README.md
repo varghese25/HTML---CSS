@@ -1,5 +1,13 @@
 
 
+## 09-01-2025 
+<p> Lorem20 // means it will generate 20 words
+
+https://www.youtube.com/watch?v=ZLC2PmuHfME&list=PLYM2_EX_xVvXZ2A08faQ_7Iz4unlGs176&index=17
+
+
+website color palette generator -- Choose variety color combination
+<------------------------------------------------------------------------>
 
 
 ## 08-01-2025 
