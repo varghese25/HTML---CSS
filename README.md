@@ -2,7 +2,10 @@
 
 
 
-
+## 08-01-2025 
+## Border OutSide Margin
+## Border InSide Padding
+/*font family, font size inherit. But margin & padding does not inherit we have to spicify*/
 
 p[class^="m"]{
 color: yellow;
@@ -27,7 +30,7 @@ https://loremipsum.io/generator //
 
 https://www.youtube.com/watch?v=oWerFE7tp-s&list=PLYM2_EX_xVvXZ2A08faQ_7Iz4unlGs176&index=13
 
------------------------------------------------------------------------->
+<------------------------------------------------------------------------>
 
 ## 04-01-2025
 

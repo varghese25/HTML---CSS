@@ -1,0 +1,44 @@
+ul{
+   
+/* list-style-image: url('images/star.png');  */
+/* list-style: circle; */
+/* list-style-position: inside; */
+/* list-style-position: outside; */
+list-style: inside circle;
+}
+
+/*Greek,latin,roman,decimal many more available*/
+ol{
+    list-style: decimal-leading-zero; 
+}
+
+li{
+   margin: 10px;
+}
+table{
+    width: 300px;
+    margin: auto;
+    border-spacing: 20px 10px; /*space between rows and columns*/
+    border-collapse: collapse; /*border collapse it looks normal.  border-collapse:seperate it takes prevoius behaviour order-spacing: 20px 10px; it will takes*/
+}
+/*Heading*/
+th{
+   text-transform: uppercase;
+   text-align: left;
+   border-bottom: 2px solid black;
+   padding: 10px;
+}
+/*th heading, td data*/
+td{ 
+    padding: 10px;
+    border:1px solid black;
+}
+/*.amt is class for RS*/
+.amt{ 
+    text-align: right;
+
+}
+/*tr is row, Used Psedue-Selector*/
+tr:nth-child(even){
+    background-color: whitesmoke;
+}

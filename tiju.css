@@ -1,3 +1,5 @@
+/*cssDemo.html this page this css works*/
+
 body{
     font-family: 'Courier New', Courier, monospace; /*font family*/
     background-color: white;
@@ -22,6 +24,10 @@ h1,h2{
     letter-spacing: .5em; /*letter spacing*/
     word-spacing: .2em; /*word spacing*/
     text-align: center; /*left, right, center, justify*/
+    border: 1px solid black; /*border*/
+    width: 150px;
+    height:50px;    
+    
 
     /* font-size: 12px; font size, default size is 16px. Modern computer define pixel as 1/125th of an inch*/
     /* font-size: 75%;  can give in 75 percentage 12px.  100 % is default 16 pixel*/
@@ -40,10 +46,64 @@ h1,h2{
 p{
     line-height: 1.5em; /*line height*/
     text-align: left; /*left, right, center, justify*/
-    text-indent: 50px; /*text indent*/
+    /* text-indent: 50px; /*text indent*/
     /* /text-indent: -9999px; /*it will text to next page. which useful during log/ */
     /* text-shadow: 2px 2px 2px #000000; first px shade towards right, second shadow towards down, third px blur, finally color */
+    /*border: 1px solid black; border thickness 1px and style solid color black */
+    /* width: 50%; width can give pixel,em, percentage total screen width it took 50% */
+    /* height: 450px; height can give pixel,em, percentage */
+    /* background-color:lightgreen; /*background color of box alone changed. */
+    /* max-height: 300px; */
+    /* overflow: hidden; /*overflow text in paragrah will be hidden*/
+    /* overflow: scroll; scroll used to scroll hidden text in paragraph/ */
+   /* border-width: 4px; /*border thickness 2px*/
+    /*border-style:dotted; /*border style dashed*/
+    /*border-color: brown red ; /*border color blue*/
+    width: 350px;
+    /* border-top: 5px solid red; /*border top 5px thickness solid color red*/
+    /*border-bottom: 4px solid green; /*border bottom 4px thickness solid color green*/
+    /*border-left: 3px solid yellow; /*border left 3px thickness solid color yellow*/
+    /*border-right: 3px solid orange; /*border right 3px thickness solid color orange*/
+    /* We can control border heigh, width, top, lef,right anything */
+    /*border-width: 7px 2px 3px 5px; /*top right bottom left 7px 2px 3px 5px single we can give*/
+    /* border-width: 6PX 1px;  /*top & bottom 6px , right & left 1px*/
+    border-width: 5px 2px 3px; /*top 5px, right & left 2px, bottom 3px*/
+    padding: 20px; /*Text displaying from border line in give some pace we use padding simple meaning(border & text gap called padding). We can control each direction top,bottow,right,left*/
+    margin: auto 20px auto;/* outer & inner gap is called margin We can control each direction top,bottow,right,left*/
+   /* border-radius: 80px 50px; /*border edge display in curve 5px or eliptical curve is 80px Horzotial & 50px veritical*/
+    /*-moz-border-radius: 20px; /*mozilla browser*/
+ /*  -webkit-border-radius: 20px ;
+
+    box-shadow: 10px 10px 10px gray;
+    -moz-box-shadow: 10px 10px 10px gray;
+    -webkit-box-shadow: inset 10px 10px 10px 5px gray;  /*inset means shadow inside the box*/
+    border: 50px black;
+    border-image: url(/images/border_image.png) 30 repeat; /*border image stretch the image, round the image,repeat */
+  
 }
+
+/*font family, font size inherit. But margin & padding does not inherit we have to spicify*/
+.paradiv{
+    /* width: 500px; width can give pixel,em, percentage child conatiner */
+    max-width: 500px;
+    min-width: 600px; /*when it reach it min-width it maintain 700px text even it box reduced*/
+    min-height: 300px; /*when it reach it min-height it maintain 500px text even it box reduced*/
+    max-height: 500px; /*when it reach it max-height it maintain 600px text even it box increased*/
+   /* border: 1px solid red; /*border*/
+  
+}
+
+li{
+    /*display: inline; Home About Contact*/
+    /*display: none; /*Home About Contact*/
+    display: inline-block;
+    margin: 10px; /*margin between each list*/
+}  
+.coming-soon{
+    visibility: hidden; /*Services will hide but about contact*/
+    /*display: none; /*Services will hide but contact will placed in service area*/
+} 
+
 /*Pseudo-elements*/
 p:first-letter{
     font-size: 2em; /*first letter size*/
@@ -60,6 +120,7 @@ a:visited{
 a:link{
     color: blue; /*link color not vistied . Now i dint click it will blue color 
     if i click change to visited brown color <a href="https://www.fontsquirrel.com/">References</a>*/
+    border: 1px solid black; /*border*/
 }
 a:hover{
     color: yellow; /*mouse over link color <a href="https://www.fontsquirrel.com/">References</a>*/
@@ -71,14 +132,32 @@ a:active{
     color: deeppink; /* user click link it active for few second wheather user clicked or not */        
 }
 
-/* p[class]{ /* p means paragragh[class] parathesise inside class means any class.Even any attribute it can [id]. 
-    if you remove class name myclass <p id="para1" class="myclass"> it wont change color.   change to below mentioned */
-    /* color: orangered; 
-} Another Example below */ */
-/* p[id =para1]{ /* p means paragragh[id =para1] parathesise inside id means any id.
-    color: orangered; /*id selector
-    }*/
+ /* p#para1{ /*p means paragragh[class] parathesise inside class means any class.Even any attribute it can [id]. 
+    if you remove class name myclass <p id="para1" class="myclass"> it wont change color.   change to below mentioned
+    color: greenyellow;
+} ex: p[id=para1], p[id], p[class], p#para1, paragr color can change this are comibnation 
+ p-paragrap [id=attribute=para1 value]  */
+
+ /* Another Example below ,p means paragragh p[class~="myclass"]~ means if one of the value=myclass, select and change color
+ p[class it can any attribute to filter].*/
+ /* p[class~="myclass"]{ 
+    color: blue;
+    } */
  
-p[class^="m"]{
-color: yellow;
-}
+    /* Another Example to  PREFIX:filtering any change color it can any attribute value="m" change]*/
+/* p[class^="m"]{
+color: burlywood;
+} */
+
+/* Another Example to  SUFFIX:filtering
+ <p id="para1" class="myclass class1"> 1 come from value=class1  */
+ /* p[class$="1"]{
+    color: red;
+    } */
+
+/* Another Example to SubString:filtering]
+ <p id="para1" class="myclass class1"> any two letter in the value=myclass or class1 it will change color
+*/
+ p[class*="my"]{
+    color: black;
+    } 
