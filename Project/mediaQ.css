@@ -1,0 +1,95 @@
+.para1{
+    background-color: red;
+}
+.para2{
+    background-color: green;
+}
+.para3{
+    background-color: blue;
+}
+
+/* device size 801p tablet, landscape iPad, lo-res laptops ands desktops. Rule Set if its cross 801px three box below paragrah display in box */
+/*@media (min-width:801px){
+    .Container p{
+        width: 30%;
+        float: left;
+        padding: 10px;
+    }
+    .para3{  /* we can change the background color inside @media when it goes out 801 px it show para3 blue color
+        
+       background-color: yellowgreen;
+    }
+}*/
+
+/* Screen Standar foramt for all device */
+/* @media screen and (min-width:801px){
+    .Container p{
+        width: 30%;
+        float: left;
+        padding: 10px;
+    }
+    .para3{  /* we can change the background color inside @media when it goes out 801 px it show para3 blue color
+        
+       background-color: yellowgreen;
+    }
+} */
+
+
+/* Print used Printing  */
+/* @media print and (min-width:801px){
+    .Container p{
+        width: 30%;
+        float: left;
+        padding: 10px;
+    }
+    .para3{  /* we can change the background color inside @media when it goes out 801 px it show para3 blue color
+        
+       background-color: yellowgreen;
+    }
+} */
+
+/* Speech used for screen reader */
+/* @media speech and (min-width:801px){
+    .Container p{
+        width: 30%;
+        float: left;
+        padding: 10px;
+    }
+    .para3{  /* we can change the background color inside @media when it goes out 801 px it show para3 blue color
+        
+       background-color: yellowgreen;
+    }
+} */
+
+/* All used in device Printing/Screen/Speech/Moible/laptop/Dedktop */
+
+/* @media all and (min-width:801px){
+    .Container p{
+        width: 30%;
+        float: left;
+        padding: 10px;
+    }
+    .para3{  /* we can change the background color inside @media when it goes out 801 px it show para3 blue color
+        
+       background-color: yellowgreen;
+    }
+} */
+
+/* @media (min-width:801px){ -- This means all default it wont apply color when your print even its in color */
+
+@media print{
+    body {
+        background-color: none;
+    }
+}
+
+/* Mobile First Approach then desktop
+Modile Approach min-width
+Desktop Approach max-width
+
+@media all and (max-width:801px){
+    .Container p{
+        width: 30%;
+        float: left;
+        padding: 10px;
+    }*/

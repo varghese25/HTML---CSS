@@ -1,0 +1,11 @@
+/* Float width is important */
+.col p{
+    width: 30%;
+    float: left;
+
+}
+
+/* If 3 Page completed and 4th Page follow from 3 page this line used Pseduo used to clear the 4th para goes to correct positio */
+.col p:nth-child(4){
+     clear: left;  /*left side it should touch */
+}

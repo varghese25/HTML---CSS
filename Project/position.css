@@ -1,24 +1,24 @@
 
-/*Default static position is parent <body> is root if it find any non static parent it will offset*/
-.bluebox{
+/* Default static position is parent <body> is root if it find any non static parent it will offset*/
+/* .bluebox{
     background-color: steelblue;
     width: 300px;
     height: 300px;
     margin-top: 50px;
-    position: relative;
-}
-.yellowbox{
+    position: relative; /*NoN Static
+} */
+/* .yellowbox{
     background-color: yellow;
     width: 100px;
-    height: 100px;
+    height: 100px; */
     /*position: relative; /* relative postion adjust the static postion of this box this called offset left and top how long to adjust */
    /* left: 20px; /* From Static postistion it has moved box 20px to right. This called called as offset meaning how long to adjust*/
     /* top: 30px; /* From Static postistion it has moved move box 30px to bottom.This called called as offset how long to adjust*/
     /* bottom: 200px;
     left: 100px;   this will positon in center*/
-    position: absolute; /* TTM heading and paragrah element will merge inside yellow box*/
-    top: 10px; /* from document 10px it adjucted  */
-}
+    /* position: absolute; /* TTM heading and paragrah element will merge inside yellow box*/
+   /* top: 10px; /* from document 10px it adjucted */
+/*} */
 
 /* relattive moves the postion of h2 to left 100px is offset. from the default position
 h2{
@@ -26,3 +26,101 @@ h2{
     left: 100px;
 
 } */
+
+
+/* Here Yellow box check Non Static Parent which Yellow then it will offset. If doesnot find it reach root which <body> it will offset to 10px*/
+/* .bluebox{
+    background-color: steelblue;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    position: relative; 
+}
+
+.yellowbox{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+} */
+
+
+/* Inside blue box Center the yellow box  */
+/* 
+.bluebox{
+    background-color: steelblue;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    position: relative; 
+}
+
+.yellowbox{
+    background-color: yellow;
+    width:100px;
+    height:100px;
+    position: absolute;
+    top:100px;
+    left:100px;
+} */
+
+
+
+/* Fixed position in yellow box: Doest not see Non Static Just position <body> root /document and blue postion it will calcuate. Only position:abouslute check for Non static rule*/
+/* .bluebox{
+    background-color: steelblue;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    position: relative;  
+}
+
+.yellowbox{
+    background-color: yellow;
+    width:100px;
+    height:100px;
+    position: fixed; /* Scroll the page it yellow box will be in fix position
+    top:100px;
+    left:100px;
+} */
+
+
+
+/* Sticky Position similar to fixed position, Sticky i brought this paragragh top in html page for this example.
+Sticky reach top positon box will not scroll futher and paragrph will scroll underneath the box*/
+/* .bluebox{
+    background-color: steelblue;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    position: sticky;  
+    top:0px;
+    bottom:0px;
+}
+
+.yellowbox{
+    background-color: yellow;
+    width:100px;
+    height:100px;
+    position: absolute;
+    top:100px;
+    left:100px;
+} */
+
+/* Float in CSS 10-1-25, paragrah came closer to blue box*/
+.bluebox{
+    background-color: steelblue;
+    width:300px;
+    height:300px;
+    margin-top:50px;
+    float: left;
+
+}
+
+.yellowbox{
+    background-color: yellow;
+    width:100px;
+    height:100px;
+}
+

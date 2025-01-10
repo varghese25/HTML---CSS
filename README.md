@@ -1,4 +1,48 @@
 
+## 10-01-2025
+
+## Responsive Site First Approach will be Mobile AfterWards Desktop
+
+Mobile First Approach then desktop<br>
+Modile Approach min-width
+Desktop Approach max-width
+
+
+
+## Responsive Design with CSS Media queries - mobile first approach - min width/max width.
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+@media all and (max-width:801px){
+    .Container p{
+        width: 30%;
+        float: left;
+        padding: 10px;
+    }*/
+
+
+NOTE: In CSS Last rule apply
+@media (min-width:801px){
+    .Container p{
+        width: 30%;
+        float: left;
+        padding: 10px;
+    }
+}
+
+
+// css applies this below style it does bother about @media (min-width:801px) 
+.Container p{
+  width:100%
+}
+
+
+
+
 
 ## 09-01-2025 
 <p> Lorem20 // means it will generate 20 words
