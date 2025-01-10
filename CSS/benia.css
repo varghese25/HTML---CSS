@@ -1,5 +1,4 @@
 ul{
-   
 /* list-style-image: url('images/star.png');  */
 /* list-style: circle; */
 /* list-style-position: inside; */
@@ -35,7 +34,7 @@ td{
 }
 /*.amt is class for RS*/
 .amt{ 
-    text-align: right;
+    text-align: center;
 
 }
 /*tr is row, Used Psedue-Selector*/
