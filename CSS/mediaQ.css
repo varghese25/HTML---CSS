@@ -63,25 +63,25 @@
 
 /* All used in device Printing/Screen/Speech/Moible/laptop/Dedktop */
 
-/* @media all and (min-width:801px){
+ @media all and (min-width:801px){
     .Container p{
         width: 30%;
         float: left;
         padding: 10px;
     }
-    .para3{  /* we can change the background color inside @media when it goes out 801 px it show para3 blue color
+    .para3{  /* we can change the background color inside @media when it goes out 801 px it show para3 blue color */
         
        background-color: yellowgreen;
     }
-} */
+} 
 
 /* @media (min-width:801px){ -- This means all default it wont apply color when your print even its in color */
 
-@media print{
+/* @media print{
     body {
         background-color: none;
     }
-}
+} */
 
 /* Mobile First Approach then desktop
 Modile Approach min-width
