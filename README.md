@@ -1,4 +1,17 @@
 
+
+## 11-01-2025
+
+- Units of measurements in css 
+  - em, rem, vw, vh, vmin, vmax
+
+- CSS gradients let you display smooth transitions between two or more specified colors.
+ - CSS defines three types of gradients: 
+   - 1.Linear Gradients: (goes down/up/left/right/diagonally)
+    - 2.Radial Gradients (defined by their center)
+     - 3.Conic Gradients (rotated around a center point)
+
+
 ## 10-01-2025
 
 ## Responsive Site First Approach will be Mobile AfterWards Desktop

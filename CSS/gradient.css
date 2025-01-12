@@ -1,0 +1,37 @@
+
+/* linear-gradient Effeect  we control (toleft,toright,totop, to top right, to top left / degree can be give 45 degree etc)
+ this effect and add many color and color percent*/
+
+/* .box{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    background: linear-gradient(to right, blue 30%, blue, green 40%, green);
+} */
+
+
+/*  radial-gradient Effeect */
+/* .box{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    background: radial-gradient(red 30%,red, green 30%, yellow);
+} */
+
+/* Repeating  linear-gradient*/
+
+/* .box{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    background:repeating-linear-gradient(blue 10px,blue 20px,green 10px, green 30px);
+}  */
+
+/* Repeating  radial-gradient*/
+
+.box{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    background:repeating-radial-gradient(blue 10px,blue 20px,green 10px, green 30px);
+}

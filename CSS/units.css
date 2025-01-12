@@ -1,0 +1,61 @@
+/* em means relative measurement which is Parent & child calculate with parent*/
+
+/* html{
+    font-size: 20px;
+} */
+/* .box{
+    font-size: 1.5em;
+} */
+
+/* 20px Multiply 1.5em = 30 px meaning parent is html and child is .box what inside it calcuate ex para1 & para2  */
+
+/* .para1{
+    font-size: 2em;
+
+} */
+
+/* Parent is .box{(font-size1.5em)} which is 30px now child is .para1{font-size(2em)} 30px 2em it will double para1 is 60px font-size */
+
+
+/* rem root meausrement here root is html {font-size:20px} para2{fon-size:2rem} 20px Mutltiple 2rem is  para2 is 40px font-size*/
+/* .para2{
+    font-size: 2rem;
+} */
+/* rem is prefer measurement in root font-size fixed it will easy to code just double from root size.
+rem used for Padding/Margin etc it useful  */
+
+/* Browser take default value is 16px  */
+
+/* .para1{
+   
+    font-size: 20px;
+
+} */
+
+
+/* Default root value for browser is 16px multiply 2rem is Para2 is 32px font-size*/
+/* .para2{
+    font-size: 2rem;
+} */
+
+/* rem is better option rather going for pixel if user Changes brower setting large font rem changes its effect.
+but pixel reamin as costant no effect */
+
+
+
+/* vw : view Port width, vh: view Port Height . Current Width and Height 50% of screen it change according
+This Meaurement used for Landing Pages*/
+/* .box{
+    width: 50vw;
+    height: 50vh;
+    border:2px solid black;
+} */
+
+
+
+/* vmin view Port mininum,  v view Port maximu, Browser Screen is Height is less from that it will display 50% width*/ 
+.box{
+    width: 50vmin;
+    height: 50vh;
+    border:2px solid black;
+}
