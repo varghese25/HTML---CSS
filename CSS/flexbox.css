@@ -1,0 +1,28 @@
+/* Flex box meaning flexiable if we want to display paragraph in flex give it container the use display as flex */
+
+/* flex:1 equalled each paragh width  */
+/* para1: i want increase withd i can increase its with flex:2. p1:p1:p2 ratio it sperated. it maintain screen size even its adjucted */
+
+/* Order Changed para3 to Middle */
+.container{
+    display:flex;
+}
+
+p{
+    padding: 10px;
+}
+.para1{
+    background-color: aquamarine;
+    flex:1;
+    order: 1;
+}
+.para2{
+    background-color: darksalmon;
+    flex:1;
+    order: 3;
+}
+.para3{
+    background-color: yellow;
+    flex:2;
+    order: 2;
+}

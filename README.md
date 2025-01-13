@@ -1,4 +1,16 @@
 
+## 12-01-2025
+
+html-5 tags 
+-  header:
+-  footer: 
+-  nav: 
+-  section:
+-  aside: 
+-  hgroup:
+-  article
+
+
 
 ## 11-01-2025
 
