@@ -4,8 +4,55 @@
 /* para1: i want increase withd i can increase its with flex:2. p1:p1:p2 ratio it sperated. it maintain screen size even its adjucted */
 
 /* Order Changed para3 to Middle */
+
+/* Flex container, paragraph are flex items in para1,para2,para3. by default it will be row 
+"Flex direction row"
+"Flex diection coloum"
+ */
+
+
+ /* Flex direction display row , by default*/
+ /*.outerbox{
+    background-color: beige;
+    min-height: 400px;
+    display: flex;
+    justify-content: center; /* main-xais vertical align. left,right,center*/
+   /* align-items: flex-end; /* cross-xais horizontal alig, Top ,bottom, center
+ }*/
+
+/* .box{
+    width: 150px;
+    height: 250px;
+    background-color: blue;
+    border:2px solid white;
+    text-align: center;
+    text-decoration-color: black;
+} */
+ 
+/* Flex direction display colum . Opposite of flex direction Row*/
+
+.outerbox{
+    background-color: beige;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* main-xais vertical align. left,right,center*/
+    align-items: center; /* cross-xais horizontal alig, Top ,bottom, center*/
+ }
+
+.box{
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    border:2px solid white;
+    text-align: center;
+    text-decoration-color: black;
+}
+
+
 .container{
     display:flex;
+    /* flex-direction: column; */
 }
 
 p{
