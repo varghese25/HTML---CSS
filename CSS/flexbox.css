@@ -1,3 +1,12 @@
+/* 
+syntax:  
+.box1{
+flex:1 2 0px;
+}  
+1 grow 2shrink 0px bases in property*/
+
+
+
 /* Flex box meaning flexiable if we want to display paragraph in flex give it container the use display as flex */
 
 /* flex:1 equalled each paragh width  */
@@ -105,6 +114,41 @@ box1 moved uppward */
 
 
 /*  justify-content: center; which means the box remain center even the screen incresed */
+/* .outerbox{
+    background-color: beige;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+ }
+
+ .box{
+    width: 180px;
+    height: 180px;
+    background-color: blue;
+    border:2px solid white;
+    text-align: center;
+    
+}  */
+/* Flex grow when screen increase.Going to grow box2. flex-grow: 1 mean size it grows even 2 */
+  /* flex-grow: 1; 1 size it grows it can 2 double sze. ratio is used to divide extra space */
+    /* box 2 grows double size the box 3. */
+    /* If we give flex-basis-0 it maintain double the size meaning .box2 grow exactly double size of box3 */
+/* .box2{
+  
+    flex-grow: 2; 
+    flex-basis: 0;
+}
+
+.box3{
+    flex-grow: 1;
+    flex-basis: 0;
+} */
+
+
+
+
+/* Flex box shrink  */
 .outerbox{
     background-color: beige;
     min-height: 400px;
@@ -121,15 +165,20 @@ box1 moved uppward */
     text-align: center;
     
 } 
-/* Flex grow when screen increase.Going to grow box2. flex-grow: 1 mean size it grows even 2 */
-.box2{
-    /* flex-grow: 1; 1 size it grows it can 2 double sze */
-    flex-grow: 2; /* box 2 grows double size the box 3.*/
+
+/* .box1 alone be standar size remainig box shrink when reduce the screen */
+.box1{
+  /* flex-shrink: 0; */
+  /* flex-shrink: 1; */
+  flex:1 2 0p;  
+    
 }
 
-.box3{
-    flex-grow: 1;
+/* .box2 flex-shrink:2 ration means above .box1 flex-shrink: 1; box2 shrink quicky   */
+.box2{
+    flex-shrink: 2;
 }
+
 
 
 .container{
@@ -142,7 +191,7 @@ p{
 }
 .para1{
     background-color: aquamarine;
-    flex:1;
+    flex:1; /* flex:1 means grow*/
     order: 2;
 }
 .para2{

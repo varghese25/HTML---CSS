@@ -1,0 +1,67 @@
+body{
+    background-color: pink;
+
+}
+
+/* .layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+    "h h h"
+    "sb1 m sb2"
+    "f f f";
+
+} */
+
+
+/* Extend the maincontent colum 5 1fr spce take from sidebar1 & 2 */
+.layout{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+    "h h h h h"
+    "sb1 m m m sb2"
+    "f f f f f";
+
+}
+
+
+.header{
+    grid-area: h;
+
+}
+
+.sidebar1{
+    grid-area: sb1;
+
+}
+
+.main{
+    grid-area: m;
+
+}
+
+.sidebar1{
+    grid-area: sb2;
+
+}
+
+
+.footer{
+    grid-area: f;
+
+}
+
+
+.layout div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: powderblue;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}

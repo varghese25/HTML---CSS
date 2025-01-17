@@ -1,0 +1,35 @@
+.square{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    /* transition-duration: 3s; */
+    /* transition-property: background-color; /* color display slowly but width increase immedately. we can add propert 
+    with comma (,) any property. if exclude this line both color & width simontously*/ 
+
+    /* transition-property:all; */
+      /* transition-property: background-color; */
+    /* transition-timing-function: ease-in; Starts slow end goes faster */
+    /* transition-timing-function: ease-out; starts fast end goes slow */
+    /* transition-timing-function: ease-in-out; Combination ease-in and ease-out */
+    /* transition-timing-function: linear; goes consit speed*/
+    /*transition-timing-function: cubic-bezier(0.59, 0.37, 0.58, 1);  take from syles in inspect tool*/
+    /* transition-delay: 1s; */
+    /* single line we can give tranistion  background color, 3s duration, 1s delay linear timing fuction  */
+    /* transition: background-color 3s 1s linear ;  */
+
+}
+
+.square:hover{
+    /* background-color: brown; */
+    /* width: 600px; */
+    /* transform:rotate(45deg); */
+    /* transform:rotatex(45deg); rotate x asis */
+    /* transform:rotatey(45deg); */
+    /* transform: scale(2); double size the box default y direction*/
+    /* transform: scaley(2); double size the box in y direction */
+    /* transform: translateX(20px) */
+    /* transform: translatey(20px); */
+    /* transform: translatey(-20px); */
+    transform: translatey(-50px);
+
+}

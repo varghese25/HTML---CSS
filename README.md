@@ -1,4 +1,13 @@
 
+## 17-01-2025
+- Flex - Used for one dimensional Either Row or Colum
+- Grid - used for Two dimensional we can decide where elment can be placed and how long it can span.
+
+
+
+
+
+
 ## 12-01-2025
 
 html-5 tags 

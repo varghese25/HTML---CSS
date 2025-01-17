@@ -1,0 +1,44 @@
+.square{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+}
+.square:hover{
+    transform: translatey(-50px);
+
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /*it will become circle*/
+    position: relative; /*move the circle and positon given @keyframes*/
+    background-color: red;
+    animation-name: circle; /* @keyframes circle. animation name*/
+    animation-duration: 3s;
+    animation-fill-mode: forwards; /*When it reach 100% it will remain. it wont go back small size meaning 50% */
+    animation-iteration-count: 10; /* time will work, infinte option available*/
+}
+
+/* 3s duration , divied 50% small size color width height, when it reach 100% animation completed with color heigh width */
+@keyframes circle { 
+    /* 50%{
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        left: 300px; /* position: relative; offset position given here*/
+        top: 300px; /* position: relative; offset position given here*/
+   /* } */
+    0%{
+        background-color: blue;
+        left: 0px; /* position: relative; offset position given here*/
+        top: 0px; /* position: relative; offset position given here*/
+    }
+    100%{
+        background-color: orange;
+        width: 300px;
+        height: 300px;
+        left: 600px;/* position: relative; offset position given here*/
+        top: 600px;/* position: relative; offset position given here*/
+    }
+    
+}
