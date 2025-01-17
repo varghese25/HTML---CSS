@@ -31,22 +31,104 @@
  
 /* Flex direction display colum . Opposite of flex direction Row*/
 
-.outerbox{
+/* .outerbox{
     background-color: beige;
     min-height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* main-xais vertical align. left,right,center*/
-    align-items: center; /* cross-xais horizontal alig, Top ,bottom, center*/
- }
+    justify-content: flex-start; /* main-xais vertical align. flex-end,flex-start*/
+    /* align-items: center; /*cross-xais horizontal alig, Top ,bottom, center*/ 
+/* }*/
 
-.box{
+/* .box{
     width: 150px;
     height: 50px;
     background-color: blue;
     border:2px solid white;
     text-align: center;
-    text-decoration-color: black;
+    
+}  */
+
+/*  justify-content:Space-between: goes edge of screen. 
+   justify-content:Space-aroun: leave space from screen.
+   
+   align-items: stretch from .box remove the height: 150px; to see output
+   
+   flex-wrap: wrap ,  wrapp based how many box suppose 4 box when scrol it divide based on it based
+   on screen width; give  in .outbox align-items: center;  */
+
+/* .outerbox{
+    background-color: beige;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: center; 
+ }
+
+ .box{
+    width: 200px;
+    height: 150px;
+    background-color: blue;
+    border:2px solid white;
+    text-align: center;
+    
+}  */
+
+
+
+/* Example 2
+box1 moved uppward */
+/* .box1{
+    align-self: flex-start;
+} */
+
+/* .outerbox{
+    background-color: beige;
+    min-height: 400px;
+    display: flex;
+    align-items: center; 
+ }
+
+ .box{
+    width: 180px;
+    height: 180px;
+    background-color: blue;
+    border:2px solid white;
+    text-align: center;
+    
+}  */
+/* this box max space */
+/* .box4{
+    flex: 1;
+} */
+
+
+/*  justify-content: center; which means the box remain center even the screen incresed */
+.outerbox{
+    background-color: beige;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+ }
+
+ .box{
+    width: 180px;
+    height: 180px;
+    background-color: blue;
+    border:2px solid white;
+    text-align: center;
+    
+} 
+/* Flex grow when screen increase.Going to grow box2. flex-grow: 1 mean size it grows even 2 */
+.box2{
+    /* flex-grow: 1; 1 size it grows it can 2 double sze */
+    flex-grow: 2; /* box 2 grows double size the box 3.*/
+}
+
+.box3{
+    flex-grow: 1;
 }
 
 
@@ -61,7 +143,7 @@ p{
 .para1{
     background-color: aquamarine;
     flex:1;
-    order: 1;
+    order: 2;
 }
 .para2{
     background-color: darksalmon;
@@ -71,5 +153,5 @@ p{
 .para3{
     background-color: yellow;
     flex:2;
-    order: 2;
+    order: 1;
 }
